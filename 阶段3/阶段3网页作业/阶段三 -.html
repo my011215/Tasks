@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>我的网页</title>
+    <style type="text/css">
+    * {
+      box-sizing:boder-box;
+    }
+    body {
+      font-family:Arial;
+      padding:10px;
+      background:black;
+    }
+    /*头部标题*/
+    .a {
+      padding:30px;
+      text-align:center;
+      background:pink;
+    }
+    .a h1 {
+      font-size:50px;
+    }
+    .a p {
+      text-align:right;
+    }
+    /*导航条*/
+    .b {
+      overflow:hidden;
+      background-color:#333;
+    }
+    /*导航条内容*/
+    .b a {
+      float:left;
+      display:block;
+      color:pink;
+      text-align:center;
+      padding:14px 16px;
+      text-decoraton:none;
+    }
+    /*导航条颜色修改*/
+    .b a:hover {
+      background-color:white;
+      color:black;
+    }
+    /*创建两列,，左侧栏*/
+    .d1 {
+      float:left;
+      width:100%;
+    }
+    /*右侧栏*/
+    .d2 {
+      float:left;
+      width:100%;
+      background-color:pink;
+    }
+    /*图片*/
+    img {
+        width:50%;
+        height:50%;
+      
+    }
+    /*文章内容效果*/
+    .e {
+      background-color:pink;
+      background-image: ('C.jpg');
+      padding:30px;
+      margin-top:30px;
+    }
+    /*列后面清除浮动*/
+    .c:after {
+      content:"";
+      display:table;
+      clear:both;
+    }
+    /*底部*/
+    .h {
+      padding:20px;
+      text-align:center;
+      background-color:pink;
+      margin-top:20px;
+    }
+    /* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
+    }
+ 
+    /* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+    }
+
+    </style>
+  </head>
+  <body>
+  <div class="a">
+    <h1>我的网页</h1>
+    <p>作者：草莓布丁</p>
+  </div>
+
+  <div class="b">
+    <a href="#">介绍</a>
+    <a href="#">动态</a>
+    <a href="#">文章</a>
+    <a href="#" style="float:right">链接</a>
+  </div>
+
+  <div class="c">
+    <div class="d1">
+      <div class="e">
+        <h2>第一次制作网页</h2>
+        <h5>2021年1月12日</h5>
+        <img src="img/B.jpg">
+        <p>学习是一种信仰</p>
+        <p>信手拈来的从容都是厚积薄发的沉淀</p>
+      </div>
+      <div class="d2">
+        <div class="e">
+        <h2>关于我</h2>
+        <img src="img/F.jpg">
+        <p>人一辈子</p>
+        <p>遇见对你好的人比较容易</p>
+        <p>可遇见待你如初见的人很难</p>
+        <p>不要刻意的去遇见谁</p>
+        <p>也不要急于拥有谁</p>
+        <p>更不要勉强的去留住谁</p>
+        <p>一切顺其自然</p>
+        <p>最后的自己留给最好的人</p>
+      </div>
+      <div class="e">
+        <h3>喜爱文章</h3>
+        <p>爱的时候不辜负人</p>
+        <p>玩的时候不辜负风景</p>
+        <p>睡觉的时候不辜负床</p>
+        <p>一个人时不辜负自己</p>
+      </div>
+      <div class="e">
+        <h3>关注我</h3>
+        <img src="img/E.jpg">
+        <p>带你看不一样的风景</P>
+      </div>
+    </div>
+  </div>
+
+  <div class="h">
+
+  </body>
+</html>
